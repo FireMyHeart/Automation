@@ -4,7 +4,7 @@ class User:
         self.last_name = last_name
     
     def print_name(self):
-        print('Имя:', self.last_name)
+        print('Имя:', self.first_name)
     
     def print_surname(self):
        print('Фамилия:', self.last_name)

@@ -1,11 +1,8 @@
 from address import Address
 from mailing import Mailing
 
-mail1 = Mailing()
-address1 = Address()
-mail1.to_address = address1
-mail1.from_address = address1
-mail1.track = 123456789
-mail1.cost = 1000
+address1 = Address(214013, 'г. Смоленск', 'ул. Матросова', '5А', '37')
+address2 = Address(129301, 'г. Москва', 'пр-кт Мира', '184 к1', 'оф. 123')
+mail1 = Mailing(address1, address2, 7000, 900724001)
 
-print(f"Отправление {mail1.track} из {mail1.to_address.index}, {mail1.to_address.city}, {mail1.to_address.street}, {mail1.to_address.house} - {mail1.to_address.flat}.")
+print(f"Отправление {mail1.track} из {mail1.from_address.index}, {mail1.from_address.city}, {mail1.from_address.street}, {mail1.from_address.house} - {mail1.from_address.flat}.")
