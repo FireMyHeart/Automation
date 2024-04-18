@@ -2,7 +2,7 @@ flag = False
 while flag == False:
     num_of_month = input('Введите номер месяца\n')
     if num_of_month.isdigit()==False:
-        print('Формат ввода - целое число!')
+        print('Формат ввода - натуральное число!')
     if num_of_month.isdigit() and (int(num_of_month) > 12 or int(num_of_month) < 1):
         print('Вы должны ввести целое число от 1 до 12')
     elif num_of_month.isdigit() and int(num_of_month) in range(1, 13):
