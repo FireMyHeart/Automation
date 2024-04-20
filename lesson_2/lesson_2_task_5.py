@@ -1,5 +1,5 @@
 flag = False
-while flag == False:
+while not flag:
     num_of_month = input('Введите номер месяца\n')
     if num_of_month.isdigit()==False:
         print('Формат ввода - натуральное число!')
