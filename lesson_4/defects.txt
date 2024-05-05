@@ -1,0 +1,9 @@
+1. Функция "is_empty" не предусматривает вариант, когда строка состоит из неразрывного пробела.
+
+Test case: text = ' '
+Expected Result: True
+Actual Result: False
+
+Error message:
+AssertionError
+Т.к. неразрывный пробел для питона — это '\xa0', следует отдельно обыграть этот вариант в коде метода.
