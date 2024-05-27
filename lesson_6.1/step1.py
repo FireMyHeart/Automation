@@ -28,11 +28,5 @@ def check_bg():
     bg_phone = driver.find_element(By.CSS_SELECTOR, '#phone').value_of_css_property("background-color")
     bg_jobposition = driver.find_element(By.CSS_SELECTOR, '#job-position').value_of_css_property("background-color")
     bg_company = driver.find_element(By.CSS_SELECTOR, '#company').value_of_css_property("background-color")
-
+    
     return [bg_zipcode == 'rgba(248, 215, 218, 1)', bg_fname == 'rgba(209, 231, 221, 1)', bg_lname == 'rgba(209, 231, 221, 1)', bg_address == 'rgba(209, 231, 221, 1)', bg_city == 'rgba(209, 231, 221, 1)', bg_country == 'rgba(209, 231, 221, 1)', bg_email == 'rgba(209, 231, 221, 1)', bg_phone == 'rgba(209, 231, 221, 1)', bg_jobposition == 'rgba(209, 231, 221, 1)', bg_company == 'rgba(209, 231, 221, 1)']
-
-#alert = driver.switch_to.alert
-#alert.dismiss()
-#driver.switch_to.default_content()
-#assert 'rgba(248, 215, 218, 1)' in driver.find_element(By.CSS_SELECTOR, '#zip-code').value_of_css_property("background-color")
-# assert "rgba(209, 231, 221, 1)" in driver.find_element(By.CSS_SELECTOR, '#first-name').value_of_css_property("background-color")

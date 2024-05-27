@@ -10,3 +10,4 @@ def test_bg_zip(result):
 def test_bg_other(result):
     res = check_bg()[1:]
     assert res == result
+    
