@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pages.MainPageOne import MainPageOne
 import allure
 
+
 @allure.id("LSN10-1")
 @allure.epic("Тесты UI. Практика ввода данных в поля")
 @allure.story("Форма Data types")
@@ -38,14 +39,16 @@ def test_step_one(result):
     bg_phone = main_page.bg_color("phone")
     bg_jobposition = main_page.bg_color("job-position")
     bg_company = main_page.bg_color("company")
-    assert result == [bg_zipcode == 'rgba(248, 215, 218, 1)',
-                    bg_fname == 'rgba(209, 231, 221, 1)',
-                    bg_lname == 'rgba(209, 231, 221, 1)',
-                    bg_address == 'rgba(209, 231, 221, 1)',
-                    bg_city == 'rgba(209, 231, 221, 1)',
-                    bg_country == 'rgba(209, 231, 221, 1)',
-                    bg_email == 'rgba(209, 231, 221, 1)',
-                    bg_phone == 'rgba(209, 231, 221, 1)',
-                    bg_jobposition == 'rgba(209, 231, 221, 1)',
-                    bg_company == 'rgba(209, 231, 221, 1)']
+    assert result == [
+        bg_zipcode == 'rgba(248, 215, 218, 1)',
+        bg_fname == 'rgba(209, 231, 221, 1)',
+        bg_lname == 'rgba(209, 231, 221, 1)',
+        bg_address == 'rgba(209, 231, 221, 1)',
+        bg_city == 'rgba(209, 231, 221, 1)',
+        bg_country == 'rgba(209, 231, 221, 1)',
+        bg_email == 'rgba(209, 231, 221, 1)',
+        bg_phone == 'rgba(209, 231, 221, 1)',
+        bg_jobposition == 'rgba(209, 231, 221, 1)',
+        bg_company == 'rgba(209, 231, 221, 1)'
+    ]
     driver.quit()

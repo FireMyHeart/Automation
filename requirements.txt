@@ -5,3 +5,4 @@ webdriver-manager==4.0.1
 psycopg2==2.9.9
 SQLAlchemy==1.4.50
 allure-pytest==2.13.5
+requests==2.31.0

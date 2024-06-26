@@ -14,7 +14,7 @@ class MainPageTwo:
     def enter_time(self, sec: int) -> None:
         self._driver.find_element(By.CSS_SELECTOR, '#delay').clear()
         self._driver.find_element(By.CSS_SELECTOR, '#delay').send_keys(sec)
-    
+
     @allure.step("Ввести два числа: {a}, {b}. И знак математической операции {sign} и вернуть результат вычислений")
     def calculate(self, a: int, b: int, sign: str) -> int:
         term1 = "//span[text()='" + str(a) + "']"

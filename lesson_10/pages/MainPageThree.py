@@ -13,7 +13,7 @@ class MainPageThree:
         self._driver.find_element(By.CSS_SELECTOR, '#user-name').send_keys("standard_user")
         self._driver.find_element(By.CSS_SELECTOR, '#password').send_keys("secret_sauce")
         self._driver.find_element(By.CSS_SELECTOR, '#login-button').click()
-    
+
     @allure.step("Добавить в корзину три товара и перейти в корзину")
     def add_to_cart(self) -> None:
         self._driver.find_element(By.CSS_SELECTOR, 'button[data-test="add-to-cart-sauce-labs-backpack"]').click()
@@ -27,7 +27,7 @@ class MainPageThree:
         self._driver.find_element(By.CSS_SELECTOR, 'input#first-name').send_keys(fname)
         self._driver.find_element(By.CSS_SELECTOR, 'input#last-name').send_keys(lname)
         self._driver.find_element(By.CSS_SELECTOR, 'input#postal-code').send_keys(index)
-    
+
     @allure.step("Вернуть итоговую сумму покупки")
     def summary(self) -> str:
         self._driver.find_element(By.CSS_SELECTOR, '#continue').click()

@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"Создание API тестов и БД тестов","POST","Библиотеки requests и SQLAlchemy","0","0","1","0","0"
+"Тесты UI. Практика ввода данных в поля","Calculate","Форма Slow calculator","0","0","4","0","0"
+"Создание API тестов и БД тестов","GET","Библиотеки requests и SQLAlchemy","0","0","2","0","0"
+"Тесты UI. Практика ввода данных в поля","Total sum","Сайт Swag Labs","0","0","1","0","0"
+"Тесты UI. Практика ввода данных в поля","Submit","Форма Data types","0","0","1","0","0"
+"Создание API тестов и БД тестов","PATCH","Библиотеки requests и SQLAlchemy","0","0","1","0","0"

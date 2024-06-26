@@ -5,7 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pages.MainPageThree import MainPageThree
 import allure
 
-@allure.id("LSN10-3")
+
+@allure.id("LSN10-6")
 @allure.epic("Тесты UI. Практика ввода данных в поля")
 @allure.story("Сайт Swag Labs")
 @allure.feature("Total sum")
